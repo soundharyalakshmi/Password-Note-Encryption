@@ -53,6 +53,8 @@ void decrypt_file(struct COMMAND_INFO info)
 
 	printf("Password Verified\n");
 
+	key=info.password[0];
+
 	while(fscanf(fptr1,"%c",&ch) != EOF)
 	{
 		ch=ch^key;
